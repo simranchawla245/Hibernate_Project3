@@ -16,7 +16,7 @@ public class Employe {
 	private String branch;
 	
 	@Id
-	@Column(name="id")
+	@Column(name="employeeId")
 	@GeneratedValue(strategy=GenerationType.AUTO,generator="oseq")
 	@SequenceGenerator(name="oseq",sequenceName="emp_seq")
 	
