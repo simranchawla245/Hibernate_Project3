@@ -20,7 +20,6 @@ public class App
        employee.setName("ashika");
        employee.setBranch("Delhi");
        System.out.println("saving employee to database");
-       
        entityManager.persist(employee);
        entityManager.getTransaction().commit();
        System.out.println("Generated employee ID="+employee.getEmployeeId());
