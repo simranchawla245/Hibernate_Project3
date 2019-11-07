@@ -17,8 +17,8 @@ public class Employe {
 	
 	@Id
 	@Column(name="employeeId")
-	@GeneratedValue(strategy=GenerationType.AUTO,generator="oseq")
-	@SequenceGenerator(name="oseq",sequenceName="emp_seq")
+	@GeneratedValue(strategy=GenerationType.AUTO,generator="acseq")
+	@SequenceGenerator(name="acseq",sequenceName="emp_seq")
 	
 	public int getEmployeeId(){
 		return employeeId;
